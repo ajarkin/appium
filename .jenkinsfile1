@@ -1,0 +1,40 @@
+pipeline {
+	agent any
+	stages {
+		stage('Build pipeline1') {
+			steps {
+					echo "executing Build pipeline1"
+			}
+		}
+		stage('Build pipeline2') {
+			steps {
+					echo "executing Build pipeline2"
+			}
+		}
+		stage('Build pipeline3') {
+			steps {
+					echo "executing Build pipeline3"
+			}
+		}
+		stage('Build pipeline4') {
+			steps {
+					echo "executing Build pipeline4"
+			}
+		}
+		stage('Build pipeline5') {
+			steps {
+					echo "executing Build pipeline5"
+			}
+		}
+		stage('Build pipeline6') {
+			steps {
+					echo "executing Build pipeline6"
+			}
+		}
+		stage('Build pipeline7') {
+			steps {
+					echo "executing Build pipeline7"
+			}
+		}
+	}
+}
