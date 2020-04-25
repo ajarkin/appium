@@ -1,0 +1,52 @@
+
+pipeline{
+	agent any
+	stages{
+		stage('Pipeline'){
+			steps{
+			 echo "executing Build Job"
+			}
+
+		}
+		stage{
+		'('Pipeline1'){
+		steps{
+		 echo "executing Deploy-to-DEV"
+		}
+		}
+		}
+		stage('Pipeline2'){
+		steps{
+		 echo "run unit tests"
+		}
+		}
+		stage{
+		('Pipeline3'){
+		steps{
+		 echo "executing Deploy-to-DEV"
+		}
+		}
+		}
+		stage{
+		('Pipeline4'){
+		steps{
+		 echo "executing Deploy-to-DEV"
+		}
+		}
+		}stage{
+		'('Pipeline5'){
+		steps{
+		echo "executing Deploy-to-DEV"
+		}
+		}
+		}stage{
+		('Pipeline6'){
+		steps{
+		bat echo "executing Deploy-to-DEV"
+		}
+		}
+		}
+
+	}
+	
+}
