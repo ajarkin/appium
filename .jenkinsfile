@@ -9,7 +9,7 @@ pipeline{
 
 		}
 		stage{
-		'('Pipeline1'){
+		('Pipeline1'){
 		steps{
 		 echo "executing Deploy-to-DEV"
 		}
@@ -34,7 +34,7 @@ pipeline{
 		}
 		}
 		}stage{
-		'('Pipeline5'){
+		('Pipeline5'){
 		steps{
 		echo "executing Deploy-to-DEV"
 		}
